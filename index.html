@@ -13,7 +13,6 @@
 	<main>
 		<div class='content'>
 			<h1>Форма обратной связи</h1>
-			<button><a href="form.html">Вход</a></button>
 			<form method="POST" action="https://httpbin.org/post">
 
 				<input type="hidden" name="user_id" value="1">
@@ -61,6 +60,12 @@
 					<input type="file" name="attachment" id="attachment">
 				</div>
 
+				<div class="text">
+					<label for="text">Текст сообщения</label>
+					<p><textarea name="text"></textarea></p>
+				</div>
+
+				<button><a href="form.html">Вход</a></button>
 				<button type="submit">Отправить</button>
 		</div>
 		</form>
