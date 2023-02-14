@@ -18,9 +18,11 @@ img {
 	left: 0;
 	overflow: auto;
 }
+
 div {
 	margin: 10px 0;
 }
+
 main {
 	background-color: #FAE3AE;
 	text-align: center;
@@ -51,10 +53,11 @@ main {
 	width: 400px;
 	height: 200px;
 }
+
 .text {
-	text-align: left;
-	margin-left: 50px;
+	text-align: center;
 }
+
 .container,
 .password {
 	float: left;
