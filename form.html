@@ -11,26 +11,27 @@
 <body>
 	<img src="img/autumn.jpg" alt="Фото_вход">
 	<main class="form">
-		<div class='content'>
+		<form method="POST" action="https://httpbin.org/post">
+			<div class='content'>
+				<div class="container">
+					<label for="uname">Логин</label>
+					<input type="text" placeholder="Введите логин" name="uname" id="uname" required>
+				</div>
+				<div class="password">
+					<label for="password">Пароль</label>
+					<input type="text" name="password" id="password" placeholder="Введите пароль" required>
+				</div>
 
-			<div class="container">
-				<label for="uname">Логин</label>
-				<input type="text" placeholder="Введите логин" name="uname" id="uname">
+				<div class="checkbox">
+					<input type="checkbox" name="agree" id="agree" value="true">
+					<label for="agree">запомнить меня</label>
+				</div>
+				<div class="bot-block">
+					<button><a href="index.html">Регистрация</a></button>
+					<button type="submit">Отправить</button>
+				</div>
 			</div>
-			<div class="password">
-				<label for="password">Пароль</label>
-				<input type="password" name="password" id="password" placeholder="Введите пароль" required>
-			</div>
-
-			<div class="checkbox">
-				<input type="checkbox" name="agree" id="agree" value="true">
-				<label for="agree">запомнить меня</label>
-			</div>
-			<div class="bot-block">
-				<button><a href="index.html">Регистрация</a></button>
-				<button type="submit">Отправить</button>
-			</div>
-		</div>
+		</form>
 	</main>
 </body>
 
