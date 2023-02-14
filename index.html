@@ -19,23 +19,23 @@
 
 				<div>
 					<label for="fio">ФИО</label>
-					<input type="text" name="fio" id="fio" placeholder="Введите ФИО">
+					<input type="text" name="fio" id="fio" placeholder="Введите ФИО" required>
 				</div>
 				<div>
 					<label for="email">Адрес электронной почты</label>
-					<input type="email" name="email" id="email" value="qq@gmail.com" required>
+					<input type="email" name="email" id="email" placeholder="Введите email" required>
 				</div>
 
 				<fieldset>
 					<legend>Откуда вы узнали о нас?</legend>
 
 					<div>
-						<input type="radio" id="friends" name="source" value="friends" checked>
+						<input type="radio" id="friends" name="source" value="friends">
 						<label for="friends">Рассказали друзья</label>
 					</div>
 
 					<div>
-						<input type="radio" id="internet" name="source" value="internet">
+						<input type="radio" id="internet" name="source" value="internet" checked>
 						<label for="internet">Реклама в интернете</label>
 					</div>
 
@@ -51,11 +51,6 @@
 				</div>
 
 				<div>
-					<input type="checkbox" name="agreement" id="agreement" value="true" required>
-					<label for="agreement">Согласен с обработкой персональных данных</label>
-				</div>
-
-				<div>
 					<label for="attachment">Вложение</label>
 					<input type="file" name="attachment" id="attachment">
 				</div>
@@ -64,7 +59,10 @@
 					<label for="text">Текст сообщения</label>
 					<p><textarea name="text"></textarea></p>
 				</div>
-
+				<div>
+					<input type="checkbox" name="agreement" id="agreement" value="true" required>
+					<label for="agreement">Согласен с обработкой персональных данных</label>
+				</div>
 				<button><a href="form.html">Вход</a></button>
 				<button type="submit">Отправить</button>
 		</div>
